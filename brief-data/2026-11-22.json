@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-22",
+  "weekday": "星期日",
+  "opening": "Gemini 开始代打商家电话，Loblaw 把杂货结账接入 Muse。",
+  "insight": "Gemini 代打商家电话和 Muse 确认杂货订单，都把 AI 带进了现成的业务流程。接入方式决定了能做多深：电话能触达没有专用接口的商家；要在对话里完成购买，则需要商家提供商品目录和结账入口，用户还要能在付款前确认。",
+  "methodNote": "收录 2026-11-17 至 11-20 发布的 12 条动态，来源为当事方公告、财报或技术说明。商家电话代办从美国开始推出，Loblaw 结账限参与的旗下品牌。芯片设计指标与集群热读速度为发布方披露，未独立复测；财务数据按各公司披露的分部口径。",
+  "homepage": {
+    "headline": "Gemini 代打商家电话，Muse 接入杂货结账",
+    "summary": "AI 助手开始对接电话和零售订单，育碧设立游戏 AI 子公司，端侧模型和 GPU 缓存分别降低本地运行和数据加载的门槛。",
+    "mobileSections": [
+      {
+        "name": "AI 产品前线",
+        "summary": "Phone Tasks · AI Transparency · Office Editing"
+      },
+      {
+        "name": "AI 行业现场",
+        "summary": "Grocery Checkout · Game Development · Chip Design"
+      },
+      {
+        "name": "AI 资本与牌局",
+        "summary": "Data Center Revenue · Cloud Earnings · Edge AI Funding"
+      },
+      {
+        "name": "AI 能力底座",
+        "summary": "Local Model · GPU Data Cache · Armenian Models"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "AI 产品前线",
+      "subtitle": "Phone Tasks · AI Transparency · Office Editing",
+      "items": [
+        {
+          "title": "Gemini 开始为美国用户致电商家",
+          "description": "Google 将商家电话代办加入 Gemini Tasks，可替用户查询服务或预约时段。商家可以退出，用户不必先安装商家的应用。",
+          "sourceName": "Google",
+          "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+          "sourceDateLabel": "2026-11-17",
+          "company": "Google",
+          "topicCluster": "consumer-agent-business-calls",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "TikTok 上线 AI 内容来源核验工具",
+          "description": "用户可检查在网上看到的内容是否由 TikTok 的 AI 工具生成或编辑。核验范围限于该平台的创作工具，不能据此判断所有内容的真伪。",
+          "sourceName": "TikTok",
+          "sourceUrl": "https://newsroom.tiktok.com/TikTok-updates-from-the-2026-tiktok-safety-and-innovation-forum?lang=en-150",
+          "sourceDateLabel": "2026-11-20",
+          "company": "TikTok",
+          "topicCluster": "platform-content-provenance",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "微软把 Word、Excel 和 PowerPoint 带入 Copilot 应用",
+          "description": "微软正式开放 Copilot 应用内的 Office 创作和编辑。用户可从对话发起文档、表格或演示文稿，再切回对应的 Office 应用继续工作。",
+          "sourceName": "Microsoft",
+          "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/office-at-ignite-2026-from-apps-to-agentic-system-of-work/4572226",
+          "sourceDateLabel": "2026-11-17",
+          "company": "Microsoft",
+          "topicCluster": "office-editing-in-copilot",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 行业现场",
+      "subtitle": "Grocery Checkout · Game Development · Chip Design",
+      "items": [
+        {
+          "title": "Loblaw 把加拿大杂货购买接入 Muse",
+          "description": "加拿大用户可以在 Muse 里规划餐食、从参与的 Loblaw 旗下品牌选货并结账。目录已接入，但下单等敏感操作仍需要用户确认。",
+          "sourceName": "Meta",
+          "sourceUrl": "https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/",
+          "sourceDateLabel": "2026-11-18",
+          "company": "Loblaw / Meta",
+          "topicCluster": "ai-grocery-checkout",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "育碧设立独立子公司开发游戏 AI",
+          "description": "育碧将可玩原型 Teammates 的团队设立为专门子公司 Motherbrain，继续研发用于游戏玩法的自有技术。这是研发组织调整，未宣布哪些正式游戏会采用。",
+          "sourceName": "Ubisoft",
+          "sourceUrl": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3zWBw9DLFyjmXNAGPYBi3F/a9bbd72b5f2ef790c254e4fd21cfcd04/Ubisoft_FY27_H1_Earnings_PR_EN_vF.pdf",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Ubisoft",
+          "topicCluster": "gameplay-ai-studio",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "AMD 把部分 AI 芯片设计改动纳入送厂版本",
+          "description": "OpenAI 披露，其模型改写电路描述并用设计工具验证，在 AMD 旗舰 GPU 的部分设计上，功耗、性能与面积指标较优化基线最高改善 14%。这不是整卡实测，AMD 已把部分改动纳入近期送厂的设计。",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "sourceDateLabel": "2026-11-18",
+          "company": "AMD / OpenAI",
+          "topicCluster": "ai-optimized-semiconductor-design",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 资本与牌局",
+      "subtitle": "Data Center Revenue · Cloud Earnings · Edge AI Funding",
+      "items": [
+        {
+          "title": "英伟达数据中心季度营收同比增长 110%",
+          "description": "英伟达披露 2027 财年第三季度数据中心营收为 1076 亿美元，并确认 Vera Rubin NVL72 已出货。出货确认与数据中心收入分开披露，不能把当季增幅直接归到新品。",
+          "sourceName": "NVIDIA",
+          "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+          "sourceDateLabel": "2026-11-17",
+          "company": "NVIDIA",
+          "topicCluster": "nvidia-fy27-q3-data-center",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "阿里 AI 云与算力服务季度营收达 609.73 亿元",
+          "description": "阿里披露截至 9 月底的季度中，AI 云与算力服务营收同比增长 53%。该分部同时包含云智能和旗下半导体公司平头哥，不能把这笔收入等同于大模型 API 收入。",
+          "sourceName": "阿里巴巴财报",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926130115/tm2630263d1_ex99-1.htm",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Alibaba",
+          "topicCluster": "alibaba-ai-cloud-compute-earnings",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "MountAIn 融资 730 万欧元推进端侧视觉",
+          "description": "法国初创公司 MountAIn 宣布完成种子融资，将推进 MountainCore 商业化。它的目标是把整套视觉应用部署到低成本微控制器，让相机和工业设备在本机处理图像。",
+          "sourceName": "MountAIn",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/17/3404553/0/en/mountain-secures-7-3-million-in-seed-funding-to-run-advanced-ai-on-chips-costing-less-than-10.html",
+          "sourceDateLabel": "2026-11-17",
+          "company": "MountAIn",
+          "topicCluster": "microcontroller-ai-seed-financing",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 能力底座",
+      "subtitle": "Local Model · GPU Data Cache · Armenian Models",
+      "items": [
+        {
+          "title": "Thinking Machines 开放 Inkling 2 Mini 权重",
+          "description": "Inkling 2 Mini 采用循环式 Transformer，可接收文字和图像并输出文字，权重采用 Apache 2.0 许可。发布方首发支持通过 Ollama 在至少有 32 GB 内存的 Mac 上运行。",
+          "sourceName": "Thinking Machines Lab",
+          "sourceUrl": "https://thinkingmachines.ai/news/inkling-2-mini/",
+          "sourceDateLabel": "2026-11-20",
+          "company": "Thinking Machines Lab",
+          "topicCluster": "looped-local-model-weights",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Together AI 给 GPU 集群加入分布式数据缓存",
+          "description": "Together Storage Accelerator 把首次读取的数据缓存到集群本地存储，其他节点可以复用，减少重复下载训练数据或模型。发布方披露的约 20 倍提升来自热读测试，不代表训练整体提速。",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/introducing-together-storage-accelerator",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Together AI",
+          "topicCluster": "gpu-cluster-distributed-data-cache",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Metric AI 发布面向亚美尼亚语的 Ayb 0.5",
+          "description": "Metric AI 发布面向亚美尼亚语的 Ayb 0.5 模型系列。面向当地产品的团队有了可按本地语言任务验证的权重，不必只参考通用多语言模型的综合分数。",
+          "sourceName": "Metric AI",
+          "sourceUrl": "https://huggingface.co/blog/Metric-AI/ayb-05-intro",
+          "sourceDateLabel": "2026-11-20",
+          "company": "Metric AI",
+          "topicCluster": "armenian-language-models",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    }
+  ]
+}
