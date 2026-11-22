@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-23",
+  "weekday": "星期一",
+  "opening": "AWS Quick 上线岗位插件，Touchmark 融资做推理容量交易。",
+  "insight": "Clay 让销售团队先用少量真实记录试跑流程，Baseten 则让分类和分流直接返回结构化结果。两者都在缩小 AI 出错后要排查的范围：前者把验证提前到批量执行之前，后者让应用少依赖对自由文本的猜测。",
+  "methodNote": "收录 2026-11-17 至 11-21 发布的 12 条动态，来源为发布方、投资方公告及美国联邦公报。Clay 为开放公测，全家项目是门店试验，美国行政会议文件仅征询意见；Kult 一条是当事方披露的运行案例，不是新品发布。",
+  "homepage": {
+    "headline": "AWS Quick 上线岗位插件，Touchmark 融资做推理交易",
+    "summary": "企业开始把岗位配置、销售试跑和模型分工做成可复用的流程；资金也流向 Agent 审核与推理采购。",
+    "mobileSections": [
+      {
+        "name": "AI 产品前线",
+        "summary": "Agent Plugins · Sales Workflows · Research Hypotheses"
+      },
+      {
+        "name": "AI 行业现场",
+        "summary": "Retail Trials · Gaming Companions · Public Adjudication"
+      },
+      {
+        "name": "AI 资本与牌局",
+        "summary": "AI Assurance · Inference Capacity · Product Discovery"
+      },
+      {
+        "name": "AI 能力底座",
+        "summary": "Decision Models · Browser Inference · Hybrid Architecture"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "AI 产品前线",
+      "subtitle": "Agent Plugins · Sales Workflows · Research Hypotheses",
+      "items": [
+        {
+          "title": "AWS Quick 上线岗位插件",
+          "description": "AWS Quick 把 Agent、技能、连接器和流程打包成插件，先提供日程与会议、销售开发等场景。团队也能把自己的配置做成共享插件，不必逐人重建。",
+          "sourceName": "AWS",
+          "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-plugins-bundle-agents-skills-connectors-flows/",
+          "sourceDateLabel": "2026-11-21",
+          "company": "AWS",
+          "topicCluster": "role-based-agent-plugins",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Clay 公测用于搭建销售流程的 Agent",
+          "description": "Clay 的全局 Agent 可从客户资料出发搭建搜索、筛选和触达流程，并先拿少量真实记录测试。公测面向指定付费方案，团队可以先检查结果再扩大运行。",
+          "sourceName": "Clay",
+          "sourceUrl": "https://www.clay.com/blog/clay-global-agent-beta",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Clay",
+          "topicCluster": "sales-workflow-pilot",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Ai2 在 Asta 中上线科研假设工具 Theorizer",
+          "description": "Theorizer 从已有论文整理证据，提出可检验的假设并标出依据。Ai2 展示的一个例子里，假设没被证实，却让研究者找到异常数据的来源。",
+          "sourceName": "Ai2",
+          "sourceUrl": "https://allenai.org/blog/theorizer-in-asta",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Ai2",
+          "topicCluster": "evidence-linked-research-hypotheses",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 行业现场",
+      "subtitle": "Retail Trials · Gaming Companions · Public Adjudication",
+      "items": [
+        {
+          "title": "富士通与全家启动低碳商品的因果 AI 试验",
+          "description": "富士通与全家将结合销售数据和 Famipay 问卷，分析试点门店里哪些信息会影响消费者购买低碳服饰。模型提出的解释还要通过实际门店活动验证。",
+          "sourceName": "Fujitsu",
+          "sourceUrl": "https://global.fujitsu/en-global/pr/news/2026/11/20-01",
+          "sourceDateLabel": "2026-11-20",
+          "company": "Fujitsu / FamilyMart",
+          "topicCluster": "retail-in-store-causal-testing",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Kult 披露游戏语音助手的模型分工",
+          "description": "Kult 披露，游戏陪玩助手把资料处理、实时语音对话和深度推理分给不同档位的模型。最贵的推理不必在每次对话触发，团队可以按任务控制成本。",
+          "sourceName": "Google Cloud / Kult",
+          "sourceUrl": "https://cloud.google.com/blog/products/gaming/kult-built-a-gaming-companion-with-gemini-that-actually-knows-your-game",
+          "sourceDateLabel": "2026-11-20",
+          "company": "Kult",
+          "topicCluster": "live-gaming-companion-routing",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "美国行政会议就机构裁决使用生成式 AI 征询意见",
+          "description": "美国行政会议向公众征询联邦机构在行政裁决中如何使用生成式 AI，包括文书和证据分析。这是制定建议前的征询，还不是授权机构采用新工具的规则。",
+          "sourceName": "美国联邦公报",
+          "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23539.htm",
+          "sourceDateLabel": "2026-11-19",
+          "company": "ACUS",
+          "topicCluster": "agency-adjudication-ai-consultation",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 资本与牌局",
+      "subtitle": "AI Assurance · Inference Capacity · Product Discovery",
+      "items": [
+        {
+          "title": "Disseqt AI 融资 800 万美元扩展 Agent 审核工具",
+          "description": "爱尔兰 Disseqt AI 获得 Gresham House Ventures 领投的融资，产品覆盖上线前测试、运行监测和审计留痕。它面向需要证明 Agent 符合内部规则的企业。",
+          "sourceName": "Gresham House Ventures",
+          "sourceUrl": "https://greshamhouseventures.com/disseqt-ai-raises-8mn-to-build-the-ai-governance-and-assurance-layer-for-enterprise-ai-agents-and-workflows-in-a-round-led-by-gresham-house-ventures/",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Disseqt AI",
+          "topicCluster": "agent-assurance-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Touchmark 融资 300 万美元做推理容量交易",
+          "description": "Touchmark 宣布种子轮融资，平台允许应用团队预订带服务承诺的推理容量，并在同一个台账管理合同。模型调用量大且波动明显的团队因此多了一种采购方式。",
+          "sourceName": "Touchmark",
+          "sourceUrl": "https://touchmark.ai/blog/touchmark-raises-3m-to-solve-the-ai-economy/",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Touchmark",
+          "topicCluster": "inference-capacity-market-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Wilgot 融资 300 万美元改善 AI 搜索里的商品信息",
+          "description": "瑞典 Wilgot 宣布由 Industrifonden 领投的种子轮，用商品评价、客服记录等数据补全页面、问答和商品资料。它卖的不只是监测品牌有没有被 AI 提到。",
+          "sourceName": "Wilgot",
+          "sourceUrl": "https://wilgot.ai/blog-and-media/wilgot-raises-3m-to-make-products-work-for-both-humans-and-ai",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Wilgot",
+          "topicCluster": "commerce-product-data-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 能力底座",
+      "subtitle": "Decision Models · Browser Inference · Hybrid Architecture",
+      "items": [
+        {
+          "title": "Baseten 开放 bison-1 和 groundhog-1 权重",
+          "description": "Baseten 发布两款基于 Gemma 4 的决策模型，接受文字和图像输入，用于分类、请求分流和按规则评分。应用可直接消费结构化结果，少做一步自由文本解析。",
+          "sourceName": "Baseten",
+          "sourceUrl": "https://www.baseten.co/resources/changelog/bison-1-and-groundhog-1-available-on-baseten/",
+          "sourceDateLabel": "2026-11-20",
+          "company": "Baseten",
+          "topicCluster": "structured-decision-models",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "微软让 Edge 使用端侧模型 Aion Instruct",
+          "description": "微软以 23 亿参数的 Aion Instruct 替换 Edge 的旧端侧模型，并让网站通过 Prompt API 试用。模型按需下载，用户也可在浏览器设置中关闭。",
+          "sourceName": "Microsoft Edge Blog",
+          "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/",
+          "sourceDateLabel": "2026-11-19",
+          "company": "Microsoft",
+          "topicCluster": "edge-on-device-prompt-api",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "OVHcloud 发布首款自研模型 Olala mini 7A1B",
+          "description": "OVHcloud 公布结合注意力与 Mamba-3 的小型混合专家模型，并提供开放权重和云端 API。团队可先用托管服务评估，再决定是否自己部署。",
+          "sourceName": "OVHcloud",
+          "sourceUrl": "https://corporate.ovhcloud.com/en-sg/newsroom/news/ovh-olala-mini/",
+          "sourceDateLabel": "2026-11-17",
+          "company": "OVHcloud",
+          "topicCluster": "european-hybrid-open-model",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    }
+  ]
+}

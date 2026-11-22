@@ -1,10 +1,26 @@
 {
   "publication": "The AI Industry Brief",
   "publisher": "坐标原点研究室",
-  "generatedAt": "2026-11-21T22:04:32.701Z",
-  "latest": "2026-11-22",
-  "issueCount": 155,
+  "generatedAt": "2026-11-22T22:06:09.442Z",
+  "latest": "2026-11-23",
+  "issueCount": 156,
   "issues": [
+    {
+      "date": "2026-11-23",
+      "weekday": "星期一",
+      "headline": "AWS Quick 上线岗位插件，Touchmark 融资做推理交易",
+      "summary": "企业开始把岗位配置、销售试跑和模型分工做成可复用的流程；资金也流向 Agent 审核与推理采购。",
+      "opening": "AWS Quick 上线岗位插件，Touchmark 融资做推理容量交易。",
+      "sections": [
+        "AI 产品前线",
+        "AI 行业现场",
+        "AI 资本与牌局",
+        "AI 能力底座"
+      ],
+      "itemCount": 12,
+      "dataUrl": "brief-data/2026-11-23.json",
+      "legacyUrl": "briefs/2026-11-23.html"
+    },
     {
       "date": "2026-11-22",
       "weekday": "星期日",
