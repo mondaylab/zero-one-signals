@@ -77,37 +77,49 @@ function fixture(t, { ready = true, issueDate = date, reject = false, sections =
   };
 }
 
-test("scheduled push sends a branded text card and shares deduplication with both manual routes", async (t) => {
+test("scheduled push sends four stacked sections with individually collapsed items", async (t) => {
   const f = fixture(t);
   assert.equal((await f.scheduled()).deliveryMode, "text_card");
   const [card] = f.cards;
   assert.equal(card.schema, "2.0");
-  assert.equal(card.config.width_mode, "fill");
+  assert.equal(card.config.width_mode, "default");
   assert.equal(card.header.subtitle.content, "坐标原点研究室");
   assert.equal(card.header.template, "blue");
   const elements = card.body.elements;
-  const rows = elements.filter(({ tag, flex_mode }) => tag === "column_set" && flex_mode === "stretch");
-  assert.deepEqual(rows.map(({ flex_mode, columns }) => [flex_mode, columns.map(({ weight }) => weight)]), [
-    ["stretch", [1, 1]],
-    ["stretch", [1, 1]],
+  assert.deepEqual(elements.map(({ tag }) => tag), [
+    "column_set", "column_set", "column_set", "column_set", "button",
   ]);
-  assert.deepEqual(elements.map(({ tag }) => tag), ["column_set", "column_set", "button"]);
-  const modules = rows.flatMap(({ columns }) => columns);
+  const modules = elements.slice(0, -1).map(({ columns }) => {
+    assert.equal(columns.length, 1);
+    return columns[0];
+  });
   for (const [index, section] of makeSections().entries()) {
     const panel = modules[index];
     assert.equal(panel.padding, "12px");
     assert.ok(card.config.style.color[panel.background_style].light_mode);
     assert.ok(card.config.style.color[panel.background_style].dark_mode);
-    const [header, ...items] = panel.elements.map(({ content }) => content);
-    assert.equal(header, `<text_tag color='blue'>0${index + 1}</text_tag> **${section.name}**`);
+    const [header, ...items] = panel.elements;
+    assert.equal(header.content, `<text_tag color='blue'>0${index + 1}</text_tag> **${section.name}**`);
     assert.equal(items.length, 3);
     for (const [itemIndex, item] of section.items.entries()) {
       const url = `${base}/reader.html?date=${date}#brief-item-${index + 1}-${itemIndex + 1}`;
-      assert.equal(items[itemIndex], `[${item.title.replace("-", "\\-")}](${url}) <font color='grey'>${date}</font>`);
+      const panel = items[itemIndex];
+      assert.equal(panel.tag, "collapsible_panel");
+      assert.equal(panel.expanded, false);
+      assert.match(panel.header.title.content, /查看详情/);
+      assert.ok(panel.header.title.content.startsWith("**" + item.title.replace("-", "\\-") + "**"));
+      assert.doesNotMatch(JSON.stringify(panel.header), /动态正文|官方来源|source\.example|\d{4}-\d{2}-\d{2}/);
+      assert.equal(panel.header.icon_position, "right");
+      assert.equal(panel.header.icon_expanded_angle, 180);
+      assert.equal(panel.elements[0].content, item.description.replace("-", "\\-"));
+      assert.ok(panel.elements[1].content.includes("[官方来源](" + item.sourceUrl + ")"));
+      assert.ok(panel.elements[1].content.includes(date.replaceAll("-", "\\-")));
+      assert.ok(panel.elements[1].content.includes("[报刊条目](" + url + ")"));
     }
   }
   assert.ok(!JSON.stringify(card).includes(legacyPublisher));
-  assert.doesNotMatch(JSON.stringify(card), /今日行业动态|今日洞察|动态正文|官方来源|source\.example|MondayLab|img_key/);
+  assert.doesNotMatch(JSON.stringify(card), /今日行业动态|今日洞察|MondayLab|img_key/);
+  assert.equal(elements.at(-1).text.content, "阅读完整报刊");
   assert.equal(elements.at(-1).behaviors[0].default_url, `${base}/reader.html?date=${date}`);
   assert.equal(f.values.get(`brief-push:${date}`).messageId, "test-message");
   for (const path of ["/send", "/send-link"]) {
@@ -148,18 +160,27 @@ test("an incomplete issue is retried rather than sending fewer than twelve items
   assert.equal(f.cards.length, 0);
 });
 
-test("headlines escape link syntax and display only the available publication date", async (t) => {
+test("folded details preserve source dates, escape markup and reject unsafe source URLs", async (t) => {
   const sections = makeSections();
-  sections[0].items[0].title = "标题 [测试]";
+  sections[0].items[0].title = "标题 [测试]\n<at id=all>";
+  sections[0].items[0].description = "MondayLab 的原文 <script>";
   sections[0].items[0].sourceDateLabel = "2026-06 · 最近官方参考";
-  sections[0].items[1].sourceDateLabel = "未公布";
+  sections[0].items[0].sourceUrl = "https://source.example/article(a)";
+  sections[0].items[1].sourceDateLabel = null;
+  sections[0].items[1].sourceUrl = "javascript:alert(1)";
+  sections[0].items[2].sourceName = null;
+  sections[0].items[2].sourceUrl = "https://source.example/unnamed";
   const f = fixture(t, { sections });
   assert.equal((await (await f.run()).json()).deliveryMode, "text_card");
-  const [, monthly, undated] = f.cards[0].body.elements[0].columns[0].elements;
-  assert.ok(monthly.content.startsWith("[标题 \\[测试\\]]("));
-  assert.match(monthly.content, /2026-06<\/font>$/);
-  assert.doesNotMatch(monthly.content, /最近官方参考/);
-  assert.doesNotMatch(undated.content, /<font/);
+  const [, monthly, undated, unnamed] = f.cards[0].body.elements[0].columns[0].elements;
+  assert.ok(monthly.header.title.content.startsWith("**标题 \\[测试\\] &lt;at"));
+  assert.doesNotMatch(monthly.header.title.content, /<at|最近官方参考|\n/);
+  assert.match(monthly.elements[0].content, /坐标原点研究室.*&lt;script/);
+  assert.ok(monthly.elements[1].content.includes("2026\\-06 · 最近官方参考"));
+  assert.match(monthly.elements[1].content, /article%28a%29/);
+  assert.doesNotMatch(undated.elements[1].content, /<font|javascript:/);
+  assert.ok(undated.elements[1].content.startsWith("官方来源 · "));
+  assert.ok(unnamed.elements[1].content.startsWith("[原文](https://source.example/unnamed)"));
 });
 
 test("Feishu rejection is recorded as failed and does not trigger an image fallback", async (t) => {

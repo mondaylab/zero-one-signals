@@ -549,7 +549,7 @@ function buildBriefTextCard({ detailUrl, date, sections }) {
   return {
     schema: "2.0",
     config: {
-      width_mode: "fill",
+      width_mode: "default",
       enable_forward: true,
       style: {
         color: {
@@ -576,11 +576,10 @@ function buildBriefTextCard({ detailUrl, date, sections }) {
       padding: "12px",
       vertical_spacing: "12px",
       elements: [
-        buildBriefSectionRow(sections.slice(0, 2), 0, detailUrl),
-        buildBriefSectionRow(sections.slice(2), 2, detailUrl),
+        ...sections.map((section, index) => buildBriefSection(section, index, detailUrl)),
         {
           tag: "button",
-          text: { tag: "plain_text", content: "查看当日详情" },
+          text: { tag: "plain_text", content: "阅读完整报刊" },
           type: "primary_filled",
           behaviors: [{ type: "open_url", default_url: detailUrl }],
         },
@@ -589,38 +588,66 @@ function buildBriefTextCard({ detailUrl, date, sections }) {
   };
 }
 
-function buildBriefSectionRow(sections, start, detailUrl) {
+function buildBriefSection(section, sectionIndex, detailUrl) {
+  const number = String(sectionIndex + 1).padStart(2, "0");
   return {
     tag: "column_set",
-    flex_mode: "stretch",
-    horizontal_spacing: "12px",
-    columns: sections.map((section, index) => {
-      const sectionIndex = start + index;
-      const number = String(sectionIndex + 1).padStart(2, "0");
-      return {
+    columns: [
+      {
         tag: "column",
         width: "weighted",
         weight: 1,
         vertical_align: "top",
         background_style: "cus-0",
         padding: "12px",
-        vertical_spacing: "10px",
+        vertical_spacing: "8px",
         elements: [
           { tag: "markdown", content: `<text_tag color='blue'>${number}</text_tag> **${briefCardText(section.name)}**` },
-          ...section.items.map((item, itemIndex) => ({
-            tag: "markdown",
-            content: formatBriefItem(item, `${detailUrl}#${briefItemAnchor(sectionIndex, itemIndex)}`),
-          })),
+          ...section.items.map((item, itemIndex) => buildBriefItemPanel(
+            item, `${detailUrl}#${briefItemAnchor(sectionIndex, itemIndex)}`,
+          )),
         ],
-      };
-    }),
+      },
+    ],
   };
 }
 
-function formatBriefItem(item, url) {
-  const title = `[${briefCardText(item.title)}](${url})`;
-  const date = stringOrNull(item.sourceDateLabel)?.match(/\b\d{4}-\d{2}(?:-\d{2})?\b/)?.[0];
-  return date ? `${title} <font color='grey'>${date}</font>` : title;
+function buildBriefItemPanel(item, readerUrl) {
+  const title = briefCardText(item.title.replace(/\s+/g, " "));
+  const links = [];
+  const sourceName = stringOrNull(item.sourceName);
+  const sourceUrl = briefSourceUrl(item.sourceUrl);
+  if (sourceUrl) links.push(`[${briefCardText(sourceName || "原文")}](${sourceUrl})`);
+  else if (sourceName) links.push(briefCardText(sourceName));
+  const sourceDate = stringOrNull(item.sourceDateLabel);
+  if (sourceDate) links.push(`<font color='grey'>${briefCardText(sourceDate)}</font>`);
+  links.push(`[报刊条目](${readerUrl})`);
+  return {
+    tag: "collapsible_panel",
+    expanded: false,
+    padding: "6px 0px 4px 0px",
+    vertical_spacing: "4px",
+    header: {
+      title: { tag: "markdown", content: `**${title}** <font color='blue'>查看详情</font>` },
+      icon: { tag: "standard_icon", token: "down-small-ccm_outlined", color: "blue", size: "14px 14px" },
+      icon_position: "right",
+      icon_expanded_angle: 180,
+    },
+    elements: [
+      { tag: "markdown", content: briefCardText(item.description) },
+      { tag: "markdown", text_size: "notation", content: links.join(" · ") },
+    ],
+  };
+}
+
+function briefSourceUrl(value) {
+  try {
+    const url = new URL(value);
+    if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) return null;
+    return url.href.replaceAll("(", "%28").replaceAll(")", "%29");
+  } catch {
+    return null;
+  }
 }
 
 function briefCardText(value) {
