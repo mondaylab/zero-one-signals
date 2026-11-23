@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-24",
+  "weekday": "星期二",
+  "opening": "Figma 把 Agent 带进白板和演示文稿，Sierra 宣布融资 17.5 亿美元。",
+  "insight": "Sinch 用 AI 改写迁移脚本，但仍要逐步验证数据；Claude Ship 能按规则审批，却保留团队原有的分支保护。判断一个 Agent 能否接手正式流程，看它能不能省掉重复操作，也要看出错时有没有原来的校验和审批兜底。",
+  "methodNote": "收录 11 月 23 日发布的 12 条一手动态，日期以来源页所在地为准。Claude Ship 的两项新能力为公测；Sinch 和毕马威条目是案例披露；RAD 已部署但尚未完成验证。融资与管理层变动按当事方公告表述。",
+  "homepage": {
+    "headline": "Figma 扩大 Agent 入口，Sierra 宣布融资 17.5 亿美元",
+    "summary": "Figma 把资料带进白板和演示稿，Claude Ship 串起代码审查与审批，Sinch 则用 AI 辅助迁移通信数据仓库。",
+    "mobileSections": [
+      {
+        "name": "AI 产品前线",
+        "summary": "Design Collaboration · Code Review · Partner Analytics"
+      },
+      {
+        "name": "AI 行业现场",
+        "summary": "Data Migration · Tax Workflows · Robotics Pilot"
+      },
+      {
+        "name": "AI 资本与牌局",
+        "summary": "Customer Service Funding · Chip Governance · Modular Robotics"
+      },
+      {
+        "name": "AI 能力底座",
+        "summary": "Local OCR · Private Data · Bare Metal"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "AI 产品前线",
+      "subtitle": "Design Collaboration · Code Review · Partner Analytics",
+      "items": [
+        {
+          "title": "Figma 将 Agent 扩展到 FigJam 和 Slides",
+          "description": "Figma 向付费方案开放 FigJam 和 Slides 里的 Agent，可用现有文件或连接器资料整理白板、起草演示文稿。讨论记录可以直接变成同一工作区里的可编辑初稿。",
+          "sourceName": "Figma",
+          "sourceUrl": "https://www.figma.com/blog/introducing-figma-agent-in-figjam-and-slides/",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Figma",
+          "topicCluster": "figjam-slides-agent-rollout",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Anthropic 公测面向 GitHub 团队的 Claude Ship",
+          "description": "Claude Ship 把代码审查、修复检查失败和按规则审批串在同一个拉取请求里。团队能指定哪些修改必须由人签字，已有的分支保护也继续生效。",
+          "sourceName": "Anthropic",
+          "sourceUrl": "https://claude.com/resources/articles/introducing-claude-ship",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Anthropic",
+          "topicCluster": "pull-request-review-governance",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "AWS 给合作伙伴中心加入数据问答",
+          "description": "AWS 合作伙伴与市场卖家可用自然语言查询销售机会、续约和账单，还可把数据每天同步到自己的 S3。问答和导出沿用原有访问权限。",
+          "sourceName": "AWS",
+          "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-analytics-agent-s3/",
+          "sourceDateLabel": "2026-11-23",
+          "company": "AWS",
+          "topicCluster": "partner-portal-analytics-agent",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 行业现场",
+      "subtitle": "Data Migration · Tax Workflows · Robotics Pilot",
+      "items": [
+        {
+          "title": "Sinch 用 AI 辅助迁移通信数据仓库",
+          "description": "通信服务商 Sinch 迁移至 BigQuery 时，用 AI 辅助转换逾千个 dbt 模型。欧洲核心负载已稳定运行，其他地区仍在推进，脚本改写与数据核对并行。",
+          "sourceName": "Google Cloud",
+          "sourceUrl": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Sinch",
+          "topicCluster": "communication-warehouse-ai-migration",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "毕马威披露 Claude 已接入税务服务平台",
+          "description": "毕马威美国高管披露，Claude 已接入 Digital Gateway 税务服务平台。接入之外，他强调仍要按客户授权处理数据，用人工监督和独立审查核对使用风险。",
+          "sourceName": "Anthropic / KPMG",
+          "sourceUrl": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data",
+          "sourceDateLabel": "2026-11-23",
+          "company": "KPMG / Anthropic",
+          "topicCluster": "tax-workflow-client-data-governance",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "RAD 在一处惩教设施部署巡检机器人",
+          "description": "RAD 的 ROAMEO 已在一处惩教设施开始巡检，正式的 30 天验证尚未启动。试验将评估能否减少对巡逻车辆的依赖，成本节省还未得到验证。",
+          "sourceName": "AITX",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/23/3408370/0/en/aitx-s-rad-deploys-roameo-to-challenge-the-high-cost-of-corrections-patrols.html",
+          "sourceDateLabel": "2026-11-23",
+          "company": "AITX / RAD",
+          "topicCluster": "robotics-patrol-pilot",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 资本与牌局",
+      "subtitle": "Customer Service Funding · Chip Governance · Modular Robotics",
+      "items": [
+        {
+          "title": "Sierra 宣布融资 17.5 亿美元",
+          "description": "客服 Agent 公司 Sierra 宣布由 Greenoaks 和 Lightspeed 领投的新一轮融资，估值为 300 亿美元。这笔资金押注的是企业客服入口，并非基础模型训练。",
+          "sourceName": "Sierra",
+          "sourceUrl": "https://sierra.ai/blog/series-f-30b",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Sierra",
+          "topicCluster": "customer-service-agent-series-f",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "英伟达董事会恢复黄仁勋的首席执行官职务",
+          "description": "英伟达董事会宣布恢复黄仁勋的总裁、首席执行官和董事职务，即时生效。独立董事委员会的调查仍会继续，公司也在物色首席合规官。",
+          "sourceName": "NVIDIA Investor Relations",
+          "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
+          "sourceDateLabel": "2026-11-23",
+          "company": "NVIDIA",
+          "topicCluster": "nvidia-ceo-reinstatement",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "coprod 融资 600 万美元开发模块化机器人硬件",
+          "description": "瑞士 coprod 宣布完成 600 万美元种子前融资，计划推出首批商业组件并在洛桑建设原型工厂。客户可用兼容的电源、传感器和运动模块搭建原型。",
+          "sourceName": "coprod",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/coprod-sammelt-6-millionen-dollar-ein-um-roboterhardware-so-einfach-zu-bauen-wie-software-302948109.html",
+          "sourceDateLabel": "2026-11-23",
+          "company": "coprod",
+          "topicCluster": "modular-robotics-hardware-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 能力底座",
+      "subtitle": "Local OCR · Private Data · Bare Metal",
+      "items": [
+        {
+          "title": "LlamaIndex 开放轻量 OCRia-nano-1 权重",
+          "description": "LlamaIndex 发布 810 万参数的 OCRia-nano-1，能在 CPU 上解析文档并输出文本和表格结构。常规文档可先在本地过一遍，复杂图表再交给更大的模型。",
+          "sourceName": "LlamaIndex",
+          "sourceUrl": "https://www.llamaindex.ai/blog/introducing-ocria-nano-1",
+          "sourceDateLabel": "2026-11-23",
+          "company": "LlamaIndex",
+          "topicCluster": "cpu-document-parsing",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Google 让 AlloyDB Omni 接入本地模型",
+          "description": "Google 的 PostgreSQL 兼容数据库 AlloyDB Omni 可接入自托管模型，在 SQL 内发起生成请求。已有本地数据仓库的团队可以不经外部模型 API 处理选定数据。",
+          "sourceName": "Google Cloud",
+          "sourceUrl": "https://cloud.google.com/blog/products/databases/alloydb-omni-integration-with-local-models",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Google Cloud",
+          "topicCluster": "postgres-local-model-integration",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "AWS 推出 EC2 G7 裸金属实例",
+          "description": "AWS 在美国东部弗吉尼亚北部开放 EC2 G7 裸金属实例，单实例提供八张 RTX PRO 4500 GPU。需要自管虚拟化或直接控制驱动的团队有了按需租用选项。",
+          "sourceName": "AWS",
+          "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-metal-size/",
+          "sourceDateLabel": "2026-11-23",
+          "company": "AWS",
+          "topicCluster": "ec2-g7-bare-metal-release",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    }
+  ]
+}
