@@ -1,0 +1,188 @@
+{
+  "date": "2026-11-26",
+  "weekday": "星期四",
+  "opening": "Claude 公测桌面应用安装；Marlowe 披露 2.77 亿美元种子融资。",
+  "insight": "Claude 让用户为生成的桌面应用单独授权；Coforge 则让安全团队审批高风险修改。一个是个人电脑，一个是企业环境，但判断能否交给 Agent 的方法相似：先把可自行处理的常规动作与必须签字的操作分开。",
+  "methodNote": "本期收录 11 月 23 日至 25 日的 12 条一手动态。Claude Artifacts 的桌面安装公测与往期的 Claude Ship 代码审查是不同产品变动；Waystar 接入是计划，FrenchFry 合并未交割，Fluidstack 的六个月是建设目标。",
+  "homepage": {
+    "headline": "Claude 公测桌面应用安装，Marlowe 披露种子融资",
+    "summary": "Claude 生成的工具可独立开窗，Marlowe 为多芯片推理设施筹资，Google DeepMind 用基础图文题测试模型回答是否稳定。",
+    "mobileSections": [
+      {
+        "name": "AI 产品前线",
+        "summary": "Desktop Apps · Personal Agents · UK Rollout"
+      },
+      {
+        "name": "AI 行业现场",
+        "summary": "Remediation · Healthcare Payments · Sports Operations"
+      },
+      {
+        "name": "AI 资本与牌局",
+        "summary": "Inference Funding · Data Orchestration · Public Markets"
+      },
+      {
+        "name": "AI 能力底座",
+        "summary": "Reliability Benchmarks · Model Routing · Modular Compute"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "AI 产品前线",
+      "subtitle": "Desktop Apps · Personal Agents · UK Rollout",
+      "items": [
+        {
+          "title": "Claude 公测将 Artifacts 安装为桌面应用",
+          "description": "Claude 用户可以把生成的 Artifacts 安装到 Mac 或 Windows，独立开窗运行，仍需联网和登录。反复用到的小工具不用每次回聊天记录里找。",
+          "sourceName": "Anthropic",
+          "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Anthropic",
+          "productFamily": "claude-artifacts",
+          "topicCluster": "artifact-desktop-install",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "CloudWalk 推出跨应用助理 Pierre Computer",
+          "description": "CloudWalk 面向付费用户推出 Pierre Computer，可跨网站查资料、安排日程，或在用户设定的额度内购物。购买前是否逐笔确认，由用户选择。",
+          "sourceName": "CloudWalk",
+          "sourceUrl": "https://www.cloudwalk.io/newsroom/cloudwalk-launches-pierre-computer-a-personal-ai-agent-that-autonomously-performs-tasks-across-platforms",
+          "sourceDateLabel": "2026-11-24",
+          "company": "CloudWalk",
+          "topicCluster": "cross-app-personal-assistant",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Meta 向英国成年用户开放 Muse",
+          "description": "英国成年用户可在手机应用、网页或 WhatsApp 使用 Muse，首批合作伙伴包括 OpenTable 和 Spotify。用户可从已有的聊天入口开始，不必另装应用。",
+          "sourceName": "Meta",
+          "sourceUrl": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Meta",
+          "topicCluster": "uk-personal-agent-rollout",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 行业现场",
+      "subtitle": "Remediation · Healthcare Payments · Sports Operations",
+      "items": [
+        {
+          "title": "Coforge 扩展企业漏洞修复服务 Nuuron",
+          "description": "Coforge 将 AI Agent 加入企业漏洞修复流程，先整理风险与优先级，再由团队审核高风险操作。安全团队可少做一些工单分流，仍掌握关键修改。",
+          "sourceName": "Coforge / 印度国家证券交易所",
+          "sourceUrl": "https://nsearchives.nseindia.in/corporate/COFORGE_25112026134625_SignedIntimationofPressReleasellNovember252026.pdf",
+          "sourceDateLabel": "2026-11-25",
+          "company": "Coforge",
+          "topicCluster": "enterprise-remediation-review",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Waystar 宣布把保险资格核验接入医疗版 Gemini",
+          "description": "Waystar 计划把账单分析和保险资格核验接入医疗版 Gemini。若集成落地，医院行政人员可在查看账款的同一入口发起核验，少切换一次系统。",
+          "sourceName": "Waystar",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/waystar-to-bring-revenue-cycle-intelligence-to-google-clouds-gemini-for-healthcare-302948898.html",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Waystar",
+          "topicCluster": "healthcare-payment-integration",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "金州勇士与女武神扩大 Gemini 合作",
+          "description": "Google 将为勇士、女武神及大通中心提供 Gemini，金州方面正将其用于定制经营和篮球运营 Agent。新合作同时覆盖后台工作与比赛日球迷互动。",
+          "sourceName": "Google",
+          "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Golden State",
+          "topicCluster": "sports-franchise-gemini-deployment",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 资本与牌局",
+      "subtitle": "Inference Funding · Data Orchestration · Public Markets",
+      "items": [
+        {
+          "title": "Marlowe 披露 2.77 亿美元种子融资",
+          "description": "Marlowe 披露获得 2.77 亿美元种子资金，计划用不同厂商的芯片服务不同推理任务。首座设施预计 12 月投运，实际利用率和成本仍待验证。",
+          "sourceName": "Marlowe",
+          "sourceUrl": "https://www.marlowe.ai/introducing-marlowe.html",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Marlowe",
+          "topicCluster": "multi-chip-inference-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Zipher 披露种子轮与 A 轮共融资 5300 万美元",
+          "description": "Zipher 披露两轮合计融资 5300 万美元，其平台可按客户预算和服务要求选择数据任务的执行引擎。企业无需把所有查询和处理任务放在同一套引擎上。",
+          "sourceName": "Zipher",
+          "sourceUrl": "https://zipher.ai/zipher-is-out-of-stealth-data-infrastructure-for-agents-by-agents/",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Zipher",
+          "topicCluster": "data-execution-orchestration-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "FrenchFry 签署借壳上市协议",
+          "description": "FrenchFry 与 Tavia 签署合并协议，交易给前者的企业估值为 5 亿美元。FrenchFry 通过共用的 AI 平台经营旗下企业，但本次交易尚未交割。",
+          "sourceName": "FrenchFry / Tavia（SEC 文件）",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2020385/000149315226053914/ex99-1.htm",
+          "sourceDateLabel": "2026-11-24",
+          "company": "FrenchFry",
+          "topicCluster": "ai-holding-company-spac",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 能力底座",
+      "subtitle": "Reliability Benchmarks · Model Routing · Modular Compute",
+      "items": [
+        {
+          "title": "Google DeepMind 发布日常任务可靠性评测",
+          "description": "Google DeepMind 在 Kaggle 发布 544 道基础图文题，涵盖 20 类能力，并检查题目稍作变化后答得是否稳定。它区分了偶尔答对和反复答对。",
+          "sourceName": "Google DeepMind",
+          "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Google",
+          "topicCluster": "everyday-task-reliability-benchmark",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Strands Agents 开放五款 Decider v2 决策模型",
+          "description": "Strands Agents 开放五款 Decider v2 权重，模型直接给候选项打分，而不是生成文本。工具选择或请求分流可单独交给决策模型处理。",
+          "sourceName": "Strands Agents",
+          "sourceUrl": "https://strandsagents.com/blog/introducing-strands-decider-v2/",
+          "sourceDateLabel": "2026-11-23",
+          "company": "AWS",
+          "topicCluster": "calibrated-agent-choices",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Fluidstack 发布模块化数据中心 Blackbird",
+          "description": "Fluidstack 推出最高 400 兆瓦的模块化数据中心，把供电、冷却和布线预装在工厂。六个月是从动工计算的建设目标，不代表现有算力已投运。",
+          "sourceName": "Fluidstack",
+          "sourceUrl": "https://fluidstack.io/news/400mw-in-six-months",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Fluidstack",
+          "topicCluster": "modular-datacenter-infrastructure",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    }
+  ]
+}
