@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-27",
+  "weekday": "星期五",
+  "opening": "天田与日立验证工厂 Agent，微盟签约采购 5000 件 GPU。",
+  "insight": "OpenClaw 把相互矛盾的原文摆到报告里，Google 则在 Agent 发邮件或改共享权限之前要求确认。两件事都说明，交给 Agent 做不等于交给它决定：读资料需要能回查证据，改系统则需要保留确认入口。",
+  "methodNote": "收录 11 月 20 日至 26 日的 12 条一手动态。Nuro 处于公开道路测试阶段，阿斯利康仍在评估业务 Agent，施耐德电气的产能释放为计划。Fireworks 本次是托管上线，与 11 月 20 日刊所述腾讯开放权重是两件事。",
+  "homepage": {
+    "headline": "天田与日立验证工厂 Agent，微盟签约采购 GPU",
+    "summary": "天田与日立测试 AI 排产和维修建议，微盟采购 5000 件 GPU 产品，施耐德电气扩充欧洲液冷设备产能。",
+    "mobileSections": [
+      {
+        "name": "AI 产品前线",
+        "summary": "Research Reports · Terminal Coding · Team Budgets"
+      },
+      {
+        "name": "AI 行业现场",
+        "summary": "Factory Operations · Driverless Trials · Cloud ERP"
+      },
+      {
+        "name": "AI 资本与牌局",
+        "summary": "GPU Procurement · Robotics Funding · Data Security"
+      },
+      {
+        "name": "AI 能力底座",
+        "summary": "Workspace Access · Hosted Models · Liquid Cooling"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "AI 产品前线",
+      "subtitle": "Research Reports · Terminal Coding · Team Budgets",
+      "items": [
+        {
+          "title": "OpenClaw 为聊天加入带出处的深度研究",
+          "description": "OpenClaw 让用户在聊天里研究网页与本地文档，报告附出处，并列显示相互矛盾的原文。比起只看结论，读者更容易找到分歧来自哪份资料。",
+          "sourceName": "OpenClaw",
+          "sourceUrl": "https://docs.openclaw.ai/releases/2026.11.10",
+          "sourceDateLabel": "2026-11-25",
+          "company": "OpenClaw",
+          "topicCluster": "cited-research-in-chat",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Pydantic AI 发布终端编程助手 Pax",
+          "description": "Pydantic AI 发布测试版 Pax，编码功能、沙盒和日志都可作为插件更换。团队也能用同一个终端界面运行自己的 Pydantic AI Agent。",
+          "sourceName": "Pydantic",
+          "sourceUrl": "https://pydantic.dev/articles/pax-harness-beta",
+          "sourceDateLabel": "2026-11-25",
+          "company": "Pydantic",
+          "topicCluster": "pluggable-coding-agent-ui",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Vercel 为企业版 v0 开放成员支出上限",
+          "description": "企业版 v0 管理员可统一设定或单独调整成员的共享额度上限。个人额度用完才会动用共享额度；达到上限后，生成在当前步骤结束时停止。",
+          "sourceName": "Vercel",
+          "sourceUrl": "https://v0.app/changelog",
+          "sourceDateLabel": "2026-11-20",
+          "company": "Vercel",
+          "topicCluster": "per-member-credit-caps",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 行业现场",
+      "subtitle": "Factory Operations · Driverless Trials · Cloud ERP",
+      "items": [
+        {
+          "title": "天田与日立验证工厂排产和维修 Agent",
+          "description": "天田与日立完成概念验证，Agent 可建议如何应对交期变更，并据历史知识给出故障排查建议。目前验证的是辅助决策，现场部署仍是下一步。",
+          "sourceName": "天田 / 日立",
+          "sourceUrl": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
+          "sourceDateLabel": "2026-11-26",
+          "company": "AMADA",
+          "topicCluster": "factory-scheduling-and-maintenance-poc",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Nuro、Lucid 和 Uber 在湾区启动无人驾驶路测",
+          "description": "三家公司在湾区四市启动车内无安全员的道路测试，员工试乘也将开始。测试范围扩大不等于对外运营，公开服务预计在 2027 年第一季度推出。",
+          "sourceName": "Nuro",
+          "sourceUrl": "https://www.nuro.ai/blog/nuro-lucid-uber-begin-driverless-testing-on-public-roads",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Nuro",
+          "topicCluster": "driverless-public-road-test",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "阿斯利康选用 SAP 云 ERP 并评估业务 Agent",
+          "description": "阿斯利康将逐步把旧版 SAP 系统迁到私有云 ERP，并评估在财务、供应链和生产中使用 Joule 与 Agent。当前明确的是迁移计划，不是 AI 已经上线。",
+          "sourceName": "SAP",
+          "sourceUrl": "https://news.sap.com/sweden/2026/11/sap-och-astrazeneca-utokar-sitt-20-ariga-samarbete-inom-affarssystem-i-molnet-och-ai/",
+          "sourceDateLabel": "2026-11-24",
+          "company": "AstraZeneca",
+          "topicCluster": "cloud-erp-workflow-modernization",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 资本与牌局",
+      "subtitle": "GPU Procurement · Robotics Funding · Data Security",
+      "items": [
+        {
+          "title": "微盟签约采购 5000 件 GPU 产品",
+          "description": "微盟智算与两家供应商分别签订协议，采购合计 5000 件 GPU 产品，对价约 4.305 亿元。设备按批交付，集团拟优先用于内部多模态推理和内容生成。",
+          "sourceName": "微盟集团 / 港交所",
+          "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1126/2026112600536_c.pdf",
+          "sourceDateLabel": "2026-11-26",
+          "company": "微盟",
+          "topicCluster": "gpu-procurement-for-inference",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Embo 宣布获得 1.1 亿美元种子融资",
+          "description": "Embo 宣布种子轮融资 1.1 亿美元，计划研发理解物理环境并掌握精细动作的机器人模型。投资押注的是通用模型，公告未给出产品上线时间。",
+          "sourceName": "Embo",
+          "sourceUrl": "https://embo.com/introducing-embo",
+          "sourceDateLabel": "2026-11-23",
+          "company": "Embo",
+          "topicCluster": "robot-world-model-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Matters.AI 披露 1200 万美元 Pre-A 轮融资",
+          "description": "Matters.AI 披露新一轮 1200 万美元融资，将继续研发数据流向追踪和 Agent 权限控制。企业安全团队需要弄清，不只是数据存在哪，还要知道后来被谁用了。",
+          "sourceName": "Matters.AI",
+          "sourceUrl": "https://beta.web.matters.ai/blogs/matters-ai-12m-pre-series-a-enterprise-data-trust-layer",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Matters.AI",
+          "topicCluster": "enterprise-data-lineage-funding",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    },
+    {
+      "name": "AI 能力底座",
+      "subtitle": "Workspace Access · Hosted Models · Liquid Cooling",
+      "items": [
+        {
+          "title": "Google 正式开放 Workspace 的 MCP 服务和命令行工具",
+          "description": "Google 正式开放 Gmail、Drive 等八项 Workspace 服务的 MCP 接口及命令行工具。权限沿用组织配置，发邮件、改共享权限等敏感动作仍需确认。",
+          "sourceName": "Google Cloud",
+          "sourceUrl": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise",
+          "sourceDateLabel": "2026-11-24",
+          "company": "Google",
+          "topicCluster": "workspace-agent-interfaces",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "Fireworks 上线腾讯 Hy4 Flash 托管推理",
+          "description": "Fireworks 上线腾讯的开放权重模型 Hy4 Flash，接受图文输入，首发上下文为 51.2 万词元。团队不必自建推理服务，但托管规格与模型标称规格不同。",
+          "sourceName": "Fireworks AI",
+          "sourceUrl": "https://fireworks.ai/blog/hy4-flash-on-fireworks",
+          "sourceDateLabel": "2026-11-25",
+          "company": "Fireworks AI",
+          "topicCluster": "hy4-flash-hosted-inference",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        },
+        {
+          "title": "施耐德电气宣布扩充意大利液冷设备产能",
+          "description": "施耐德电气宣布将意大利孔塞尔韦工厂的冷却液分配单元产能翻倍，预计 2027 年 1 月起释放。此类设备的交付时间也会影响高密度机房上线。",
+          "sourceName": "施耐德电气",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/26/3410926/0/en/schneider-electric-industrializes-european-liquid-cooling-manufacturing-capacity-to-underpin-ai-data-center-demand.html",
+          "sourceDateLabel": "2026-11-26",
+          "company": "Schneider Electric",
+          "topicCluster": "europe-liquid-cooling-capacity",
+          "sourceTier": "primary",
+          "discoverySource": "web-search"
+        }
+      ]
+    }
+  ]
+}
