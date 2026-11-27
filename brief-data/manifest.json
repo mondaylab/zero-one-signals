@@ -1,10 +1,26 @@
 {
   "publication": "The AI Industry Brief",
   "publisher": "坐标原点研究室",
-  "generatedAt": "2026-11-27T06:46:02.194Z",
-  "latest": "2026-11-27",
-  "issueCount": 159,
+  "generatedAt": "2026-11-27T22:03:57.128Z",
+  "latest": "2026-11-28",
+  "issueCount": 160,
   "issues": [
+    {
+      "date": "2026-11-28",
+      "weekday": "星期六",
+      "headline": "Slate 上线差旅报销助手，DeepL 发布 Aure v2",
+      "summary": "Slate 从票据生成报销报告，伦敦儿童医院将评估 AI 对账，国家数据局就训练与推理数据使用规则征求意见。",
+      "opening": "Slate 上线差旅报销助手，DeepL 发布实时语音翻译模型。",
+      "sections": [
+        "AI 产品前线",
+        "AI 行业现场",
+        "AI 资本与牌局",
+        "AI 能力底座"
+      ],
+      "itemCount": 12,
+      "dataUrl": "brief-data/2026-11-28.json",
+      "legacyUrl": "briefs/2026-11-28.html"
+    },
     {
       "date": "2026-11-27",
       "weekday": "星期五",
